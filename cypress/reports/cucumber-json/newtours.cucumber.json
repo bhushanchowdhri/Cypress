@@ -1,0 +1,165 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "New tours validation",
+    "line": 2,
+    "id": "new-tours-validation",
+    "tags": [
+      {
+        "name": "@smokeall",
+        "line": 1
+      }
+    ],
+    "uri": "newtours.feature",
+    "elements": [
+      {
+        "id": "new-tours-validation;home-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Home page",
+        "tags": [
+          {
+            "name": "@smokeall",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User Opens URL",
+            "result": {
+              "status": "passed",
+              "duration": 2207000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mercury",
+                      "mercury"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I login as",
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User clicks on Submit",
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User verifies title \"Login: Mercury Tours\"",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "new-tours-validation;verify-title",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify title",
+        "tags": [
+          {
+            "name": "@smokeall",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User Opens URL",
+            "result": {
+              "status": "passed",
+              "duration": 1679000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mercury",
+                      "mercury"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I login as",
+            "result": {
+              "status": "passed",
+              "duration": 481000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User clicks on Submit",
+            "result": {
+              "status": "passed",
+              "duration": 906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User verifies title \"Login: Mercury Tourss\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 'Login: Mercury Tours' to equal 'Login: Mercury Tourss'\n    + expected - actual\n\n    -'Login: Mercury Tours'\n    +'Login: Mercury Tourss'\n\n    at Context.eval (cypress/e2e/cucumber/Tests/step_definitions/stepdefinition.cy.js:29:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

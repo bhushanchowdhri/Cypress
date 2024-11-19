@@ -7,7 +7,7 @@ Before(() => {
 
 After(() => {
     cy.reload();
-    //test
+
 })
 
 
